@@ -8,7 +8,8 @@
 		<div class="w-full flex-grow flex items-center w-auto pt-0" id="nav-content">
 			<ul class="list-reset flex justify-end flex-1 items-center">
 				<li class="flex items-center">
-					<NuxtLink class="inline-block text-gray-600 hover:text-gray-200 py-2" to="https://github.com/LeonRyan/nuxt3-demo">
+					<NuxtLink class="inline-block text-gray-600 hover:text-gray-200 py-2" 
+						to="https://github.com/LeonRyan/nuxt3-demo" target="_blank">
 						<IconMdi:github class="text-2xl" />
 					</NuxtLink>
 				</li>

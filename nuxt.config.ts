@@ -4,9 +4,9 @@ import IconsResolver from 'unplugin-icons/resolver'
 
 export default defineNuxtConfig({
   runtimeConfig: {
-    cmcApiKey: 'xxx',
+    cmcApiKey: '',
     public: {
-      cmcApiBase: 'https://pro-api.coinmarketcap.com/v1/'
+      cmcApiBase: ''
     }
   },
   app: {

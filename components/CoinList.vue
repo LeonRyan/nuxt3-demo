@@ -49,14 +49,10 @@
   import { useCurrencyFormat } from '~/composables/useCurrencyFormat';
   import { useMediaQuery } from '@vueuse/core';
 
-  // TODO: Move to api, remove hard code keys, type coinData
-  const { data: coinData, pending, error, refresh } = await useFetch('cryptocurrency/listings/latest',
-    {
-      headers: { 'X-CMC_PRO_API_KEY': 'xxx' /* config.cmcApiKey */ },
-      baseURL: 'https://pro-api.coinmarketcap.com/v1/'/* config.public.cmcApiBase */,
-      params: { start: 1, limit: 20, cryptocurrency_type: 'coins'  }
-    }
-  );
+  // TODO: Error handling
+  const { data: coinData, pending, error, refresh } = await useFetch('/api/listCoins', {
+    params: { start: 1, limit: 20 }
+  });
   
   const isTablet = useMediaQuery('(min-width: 640px)');
   const formatRate = (amount: number) => useCurrencyFormat(amount)

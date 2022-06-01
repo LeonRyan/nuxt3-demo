@@ -12,7 +12,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: 'Nuxt 3 Demo',
-      titleTemplate: '%s - Nuxt 3 Awesome Starter',
+      titleTemplate: '%s - Nuxt 3 demo',
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         {
